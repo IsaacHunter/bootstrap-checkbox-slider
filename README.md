@@ -2,13 +2,16 @@ Bootstrap Checkbox-Slider
 =========================
 
 ### Keep Styling
-Use this to extend bootstrap styling to turn your boring old HTML checkboxes into sliding checkboxes. Simply add a css class to your checkbox: 
-```html
-<label class="checkbox-slide checkbox-slide-primary">	
-  <input type="checkbox" />
-  <label></label>
-</label>
-```
-and use these beautiful checkboxes
+Use this to extend bootstrap styling to turn your boring old HTML checkboxes into sliding checkboxes. Simply add a css class to your checkbox and start using these beautiful checkboxes
 
 ![alt tag](https://raw.github.com/IsaacHunter/bootstrap-checkbox-slider/master/demo.png)
+
+```html
+  <input type="checkbox" class="checkbox-slide checkbox-slide-primary" checked />
+  <input type="checkbox" class="checkbox-slide checkbox-slide-success" checked />
+  <input type="checkbox" class="checkbox-slide checkbox-slide-info" />
+  <input type="checkbox" class="checkbox-slide checkbox-slide-warning" checked />
+  <input type="checkbox" class="checkbox-slide checkbox-slide-danger" />
+```
+
+
