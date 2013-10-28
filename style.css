@@ -1,5 +1,4 @@
-
-input[type=checkbox] {
+.checkbox-slider input[type=checkbox] {
 	visibility: hidden;
 }
 
