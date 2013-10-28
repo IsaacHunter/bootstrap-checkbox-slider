@@ -10,4 +10,5 @@ Use this to extend bootstrap styling to turn your boring old HTML checkboxes int
 </label>
 ```
 and use these beautiful checkboxes
+
 ![alt tag](https://raw.github.com/IsaacHunter/bootstrap-checkbox-slider/master/demo.png)
