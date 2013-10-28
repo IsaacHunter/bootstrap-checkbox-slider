@@ -1,0 +1,72 @@
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.checkbox-slider {
+	width: 60px;
+	height: 34px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	margin: 20px auto;
+	cursor: pointer;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+}
+.checkbox-slider label {
+	display: block;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index: 1;
+}
+
+.checkbox-slider input[type=checkbox]:checked + label {
+	left: 28px;
+}
+
+.checkbox-slider-primary input[type=checkbox]:checked + label {
+	background-color: #428bca;
+	border-color: #285e8e;
+}
+
+.checkbox-slider-success input[type=checkbox]:checked + label {
+	background-color: #5cb85c;
+	border-color: #398439;
+}
+
+.checkbox-slider-info input[type=checkbox]:checked + label {
+	background-color: #5bc0de;
+	border-color: #269abc;
+}
+
+.checkbox-slider-warning input[type=checkbox]:checked + label {
+	background-color: #f0ad4e;
+	border-color: #d58512;
+}
+
+.checkbox-slider-danger input[type=checkbox]:checked + label {
+	background-color: #d9534f;
+	border-color: #ac2925;
+}
