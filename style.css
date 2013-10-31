@@ -81,3 +81,24 @@
 	background-color: #d9534f;
 	border-color: #ac2925;
 }
+
+.checkbox-slider-sm {
+	width: 26px;
+	height: 24px;
+}
+
+.checkbox-slider-sm:before {
+	width: 26px;
+	height: 1px;
+	margin-top: 10px;
+	margin-left: 3px;
+}
+
+.checkbox-slider-sm:after {
+	width: 15px;
+	height: 15px;
+}
+
+.checkbox-slider-sm:checked:after {
+	margin-left: 15px;
+}
