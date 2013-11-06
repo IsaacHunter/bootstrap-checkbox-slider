@@ -1,21 +1,4 @@
 .checkbox-slider  {
-	visibility: hidden;
-	cursor: pointer;
-	width: 60px;
-	height: 34px;
-	vertical-align: middle;
-	margin:0;
-	position: relative;
-	display:block;
-}
-
-.checkbox-slider.checkbox-slider-inline {
-	display:inline;
-}
-
-.checkbox-slider:before {
-	visibility: visible;
-	content: '';
 	width: 60px;
 	height: 34px;
 	background-color: #fff;
@@ -27,21 +10,26 @@
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	border-radius: 50px;
-	position: absolute;
+	position: relative;
 }
 
-.checkbox-slider:after {
-	content: '';
+.checkbox-slider.checkbox-slider-inline {
+	display:inline;
+}
+
+.checkbox-slider input {
+	visibility: hidden;
+}
+
+.checkbox-slider input ~ span {
 	width: 28px;
 	height: 28px;
-	visibility: visible;
-
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
 	border-radius: 100%;
+	-moz-border-radius: 100%; /* Firefox */
+	-webkit-border-radius: 100%; /* Safari and Chrome */
 	background-color: #fff;
 	border: 1px solid #ccc;
-
+	
 	-webkit-transition: all .4s ease;
 	-moz-transition: all .4s ease;
 	-o-transition: all .4s ease;
@@ -49,57 +37,53 @@
 	transition: all .4s ease;
 	position: absolute;
 	z-index: 1;
-	margin-left: 3px;
-	margin-top: 3px;
+	left: 3px;
+	top: 2px;
 }
 
-.checkbox-slider:checked:after,
-.checkbox-slider:after + input:checked {
-	margin-left: 28px;
+.checkbox-slider input:checked  ~ span{
+	left: 28px;
 }
 
-.checkbox-slider-primary:checked:after {
+.checkbox-slider-primary input:checked  ~ span {
 	background-color: #428bca;
 	border-color: #285e8e;
 }
 
-.checkbox-slider-success:checked:after {
+.checkbox-slider-success input:checked  ~ span {
 	background-color: #5cb85c;
 	border-color: #398439;
 }
 
-.checkbox-slider-info:checked:after {
+.checkbox-slider-info input:checked  ~ span {
 	background-color: #5bc0de;
 	border-color: #269abc;
 }
 
-.checkbox-slider-warning:checked:after {
+.checkbox-slider-warning input:checked  ~ span {
 	background-color: #f0ad4e;
 	border-color: #d58512;
 }
 
-.checkbox-slider-danger:checked:after {
+.checkbox-slider-danger input:checked  ~ span {
 	background-color: #d9534f;
 	border-color: #ac2925;
 }
 
 .checkbox-slider-sm {
-	width: 35px;
-	height: 24px;
-}
-
-.checkbox-slider-sm:before {
 	width: 26px;
 	height: 1px;
 	margin-top: 10px;
 	margin-left: 3px;
 }
 
-.checkbox-slider-sm:after {
+.checkbox-slider-sm input ~ span {
 	width: 15px;
 	height: 15px;
+	left: -2px;
+	top: -7px;
 }
 
-.checkbox-slider-sm:checked:after {
-	margin-left: 15px;
+.checkbox-slider-sm input:checked ~ span {
+	left: 13px;
 }
