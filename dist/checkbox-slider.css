@@ -2,23 +2,25 @@
 	width: 60px;
 	height: 34px;
 	background-color: #fff;
-	border: 1px solid #ccc;
+	cursor: pointer;
+	position: relative;
+	display: block;
+
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-	cursor: pointer;
-
+	border: 1px solid #ccc;
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	border-radius: 50px;
-	position: relative;
 }
 
-.checkbox-slider.checkbox-slider-inline {
-	display:inline;
+.input-group-addon .checkbox-slider-success {
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .checkbox-slider input {
-	visibility: hidden;
+	display: none;
 }
 
 .checkbox-slider input ~ span {
@@ -73,8 +75,8 @@
 .checkbox-slider-sm {
 	width: 26px;
 	height: 1px;
-	margin-top: 10px;
-	margin-left: 3px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .checkbox-slider-sm input ~ span {
